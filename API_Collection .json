@@ -1,0 +1,1275 @@
+{
+	"info": {
+		"_postman_id": "c94f8b5b-1ca2-4bf8-9050-55062319fa5a",
+		"name": "Crowd Funding Django",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "View Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tYWlpLmVtYWRAZ21haWwuY29tIiwiZXhwIjoxNjUyMjEzODMxfQ.6ZGSxvB0oc8XkuNZ5z5jDFOvrp4iem18eFjn-qWLtCg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/profile/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"profile",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/projects/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"projects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View donations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/donations/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"donations",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkMzAwQGdtYWlsLmNvbSIsImV4cCI6MTY1MjEzNzE3N30.FMgC6ChntDDkTuKSWEpbQ6KLibaRRCsJcyD7yiZIUiQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "gehad",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "ehab",
+									"type": "text"
+								},
+								{
+									"key": "mobile_phone",
+									"value": "01032343814",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gehadmosaad88@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "profile_image",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "password",
+									"value": "PAssword123@!!",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/update",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"first_name\": \"ddddddddd\",\r\n        \"last_name\": \"aaaa\",\r\n        \"password\": \"123456\",\r\n        \"mobile_phone\": \"0101306560\",\r\n         \"is_verifications\": false\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/delete/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Mohamed",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Alabasy",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "eng.mohamed.alabasy@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Paasword123@!!",
+									"type": "text"
+								},
+								{
+									"key": "confirm_password",
+									"value": "Paasword123@!!",
+									"type": "text"
+								},
+								{
+									"key": "mobile_phone",
+									"value": "01013066560",
+									"type": "text"
+								},
+								{
+									"key": "profile_image",
+									"type": "file",
+									"src": "/home/beso/Pictures/Screenshots/Screenshot from 2022-05-15 19-07-19.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "donate to specific project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paid_up\": 10,\r\n    \"user\":1,\r\n    \"project\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/donate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"donate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Rate The Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rate\": 4,\r\n    \"user\":1,\r\n    \"project\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/rate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"rate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "eng.mohamed.alabasy@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Paasword123@!!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-email",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUxNjk3NDg2LCJpYXQiOjE2NTE2OTcxODYsImp0aSI6IjE5NzA1YjQ2NDU0MzQ5YTI4ZDRmZWNiMjkyMWI3ODA0IiwidXNlcl9pZCI6NDR9.8fCG63lh-Hzp_9zTSEURBtC0Bl3NofOXz7kjSYmKcO0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/email-verify?token=fffffffff",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"email-verify"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "fffffffff"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "facebook",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"auth_token\": \"EAAu4pQj7cpABAIMop3aUnAYlITNovu5ZAhARE40cI7tAtK8M4P63r6r4ZCO6hMRtZBVdA5hmlljnERKb89OtfXPCPJcKZA0gPozHwYEFacCbqtjfZAZAhxvYCEHYq6d6zqvOlVNZBrYtuLIRzh7Pe4OZCyYWWmMHkZCN79mRI8GX0FVFaulk4u7gcvTYgaWhnXq8ZD\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/social_auth/facebook",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"social_auth",
+								"facebook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request-reset-email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "gehadmosaad88@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/request-reset-email/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"request-reset-email",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "password-reset",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/password-reset/OQ/b54ios-fa75d3774b3c66d40ce4aad2381b6b07/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"password-reset",
+								"OQ",
+								"b54ios-fa75d3774b3c66d40ce4aad2381b6b07",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "password-reset-complete",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "uidb64",
+									"value": "OQ",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "b54ios-fa75d3774b3c66d40ce4aad2381b6b07",
+									"type": "text"
+								},
+								{
+									"key": "new_password",
+									"value": "Salamaaaaaaaaaaaaaaaa123@",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/user/password-reset-complete",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"password-reset-complete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "create project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImRpbmEucmVkYS5lbHNlYmFleUBnbWFpbC5jb20iLCJleHAiOjE2NTIxMzM2NDd9.kivr8HTIJTS8kzeiboPpTxaVqR5l5FLRCHgwlOA3t7o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "this is title",
+									"type": "text"
+								},
+								{
+									"key": "total_target",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "end_campaign",
+									"value": "2022-04-15",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "owner",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/home/beso/Pictures/Screenshots/Screenshot from 2022-05-15 19-07-19.png"
+								},
+								{
+									"key": "tags",
+									"value": "this is tag name 1",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "this is tag name 2",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "this is the description of project",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Report Projects",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reason\":  \"This field is required\",\r\n    \"user\": 1,\r\n    \"project\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/report",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Report Comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reason\":  \"This field is required.\",\r\n    \"user\": 1,\r\n    \"comment\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/comment/report",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"comment",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Replies Comments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImJlc29AZ21haWwuY29tIiwiZXhwIjoxNjUyMTc1MzY1fQ.Zi5HiENbVbXMFk7R8uacdcmj56hPVFt1MSfaPWShT0Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"replie\":  \"This field is required.\",\r\n    \"comment\": 1,\r\n    \"user\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/comment/reply/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"comment",
+								"reply",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Comments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImVuZy5tb2hhbWVkLmFsYWJhc3lAZ21haWwuY29tIiwiZXhwIjoxNjUyNzY1NjY2fQ.GhbxSjjLErXt329Jb010Ygp49joDet-T-niN16gQhVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"This field is required.\",\r\n    \"project\":  1,\r\n    \"user\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/comment/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"comment",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cancel The Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/cancel/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"cancel",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show projects with similar tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/similar/tag22",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"similar",
+								"tag22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show single projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/single/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"single",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Latest 5 Projects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/latest",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"latest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Categories",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/categories",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tags",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comments and replies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImdlaGFkbW9zYWFkQGdtYWlsLmNvbSIsImV4cCI6MTY1MTY4MzM1OX0.GafySQzQLdrNMbalHVkL3kyNnX_rQx5gdkGKdBorLlA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/comments/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get highestRate projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/highestRate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"highestRate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get latestAdminSelected",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/latestAdminSelected",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"latestAdminSelected"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get project by categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/category/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get project search bar by title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/search/title/pro1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"search",
+								"title",
+								"pro1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get project search bar by tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/project/search/tag/tag22",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"project",
+								"search",
+								"tag",
+								"tag22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
